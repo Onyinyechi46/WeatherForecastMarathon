@@ -1,0 +1,16 @@
+cabal-version:       >=1.10
+name:                WeatherForecastMarathon
+version:             0.1.0.0
+build-type:          Simple
+
+executable WeatherForecastMarathon
+  main-is:             Main.hs
+  hs-source-dirs:      app, src
+  other-modules:       WeatherLogic
+  build-depends:       base >=4.7 && <5,
+                       time,
+                       scotty,
+                       blaze-html,
+                       text,
+                       wai-middleware-static
+  default-language:    Haskell2010
